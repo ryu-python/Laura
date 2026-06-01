@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laura 💙</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b0c10;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* Tela de Entrada */
+#entrada{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#0b0c10;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    animation:sumir 4s forwards;
+}
+
+#entrada h1{
+    font-size:5rem;
+    color:#66fcf1;
+    text-shadow:0 0 20px #66fcf1;
+    animation:pulsar 1.5s infinite alternate;
+}
+
+#entrada p{
+    margin-top:20px;
+    font-size:1.2rem;
+}
+
+@keyframes pulsar{
+    from{transform:scale(1);}
+    to{transform:scale(1.1);}
+}
+
+@keyframes sumir{
+    0%,80%{opacity:1;}
+    100%{
+        opacity:0;
+        visibility:hidden;
+    }
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0b0c10,#1f2833,#0b0c10);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:5rem;
+    color:#66fcf1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#c5c6c7;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#66fcf1;
+    color:#0b0c10;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* Seções */
+.section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.section h2{
+    color:#66fcf1;
+    margin-bottom:40px;
+}
+
+/* Galeria */
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1f2833;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #66fcf1;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+/* Mensagem */
+.mensagem{
+    background:#1f2833;
+    padding:40px;
+    border-radius:20px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Rodapé */
+footer{
+    text-align:center;
+    padding:30px;
+    color:#c5c6c7;
+}
+</style>
+</head>
+
+<body>
+
+
+<section class="hero">
+    <h1>LAURA</h1>
+    <p>Um mural especial inspirado pelo seu universo </p>
+    <a href="#fotos" class="btn">Ver Fotos</a>
+</section>
+
+<section class="section" id="fotos">
+    <h2>🌌 Universo da Laura 🌌</h2>
+
+    <div class="galeria">
+
+        <div class="card">
+            <img src="Fotos/DANI.jpeg" alt="">
+            <h3>🌠 Momentos aleatórios da sua galeria</h3>
+        </div>
+
+        <div class="card">
+            <img src="Fotos/THIAGO.jpeg" alt="">
+            <h3>🌎 Você é a MELHOR dando palestra</h3>
+        </div>
+
+        <div class="card">
+            <img src="Fotos/laura e thiago.jpeg" alt="">
+            <h3> Muito legal matar aula 🤟</h3>
+        </div>
+
+        <div class="card">
+            <img src="Fotos/MOCA.jpeg" alt="">
+            <h3>⭐</h3>
+        </div>
+
+        <div class="card">
+            <img src="Fotos/GATA.jpeg" alt="">
+            <h3>Sua gata é muito fofa</h3>
+        </div>
+
+        <div class="card">
+            <img src="Fotos/SENHORA.jpeg" alt="">
+            <h3>⭐ </h3>
+        </div>
+
+        
+    </div>
+</section>
+
+<section class="section">
+    <h2> Notas</h2>
+
+    <div class="mensagem">
+        Cada estrela ilumina o céu de uma forma única.<br><br>
+
+        Assim como cada momento vivido se transforma em uma lembrança especial.
+        Este mural foi criado para guardar histórias e momentos
+        inesquecíveis.<br><br>
+
+        Que este universo azul represente toda a admiração,
+        carinho e gratidão por você.<br><br>
+
+        ✨ Senhora, você é uma pessoa incrível. ✨
+        Ass:Thiago
+    </div>
+</section>
+
+<footer>
+     especialmente para Laura
+</footer>
+
+</body>
+</html>
